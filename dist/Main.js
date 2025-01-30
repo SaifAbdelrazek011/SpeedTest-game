@@ -151,7 +151,7 @@ const loseGame = function () {
     finishMessage.innerHTML = "";
     finishMessage.appendChild(span);
     startPopup.style.display = "block";
-    document.querySelector(".success").play();
+    document.querySelector(".fail").play();
 };
 const checkTheGameState = function (theStatue) {
     if (difficultyLevelName === "easy" &&

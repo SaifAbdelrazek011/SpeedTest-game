@@ -192,7 +192,7 @@ const loseGame = function (): void {
   finishMessage.innerHTML = "";
   finishMessage.appendChild(span);
   startPopup.style.display = "block";
-  (document.querySelector(".success") as HTMLAudioElement).play();
+  (document.querySelector(".fail") as HTMLAudioElement).play();
 };
 
 const checkTheGameState = function (theStatue: boolean) {

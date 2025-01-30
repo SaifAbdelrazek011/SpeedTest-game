@@ -28,10 +28,10 @@ A responsive typing speed test game with adaptive difficulty levels and theme sw
 - 🔊 Sound Feedback System
 
 ### Difficulties Explained
-- Easy: simple words with 5 sec per word
-- normal: medium words in difficulty with 4 sec per word
-- hard: hard and long words with 4 sec per word
-- insane: as hard as hard in words difficulty but in 2 sec per word only
+- Easy: simple words with 5 sec per word. Max wrongs: number of words * 0.5
+- normal: medium words in difficulty with 4 sec per word. Max wrongs: number of words * 0.25
+- hard: hard and long words with 4 sec per word. Max wrongs: 1
+- insane: as hard as hard in words difficulty but in 2 sec per word only. Max wrongs: 1
 
 ## Codebase Structure
 

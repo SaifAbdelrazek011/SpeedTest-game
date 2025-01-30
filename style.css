@@ -1,0 +1,195 @@
+:root {
+  --main-bg-color: #121212;
+  --main-game-color: #e09e3e;
+  --main-text-color: #e0e0e0;
+  --important-text-color: #ffc107;
+  --parts-bg-color: #1f1f1f;
+  --msg-span-color: #e09e3e;
+  --start-btn-color: #e09e3e;
+  --control-span-color: #ffc107;
+  --good-finish-color: var(--main-game-color);
+  --bad-finish-color: #ff4c4c;
+}
+
+.light-theme {
+  --main-bg-color: #f9f9f9;
+  --main-game-color: #ffc857;
+  --main-text-color: #333333;
+  --important-text-color: #ffa500;
+  --parts-bg-color: #f2f2f2;
+  --msg-span-color: #ffc857;
+  --start-btn-color: #ffc857;
+  --control-span-color: #cc7a00;
+  --good-finish-color: var(--main-game-color);
+  --bad-finish-color: #d32f2f;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.whole-game-container {
+  background-color: var(--main-bg-color);
+  color: var(--font-color);
+  min-height: 100vh;
+}
+.main-container {
+  margin: auto;
+  max-width: 900px;
+}
+.game-name {
+  background-color: var(--main-game-color);
+  color: var(--main-text-color);
+  padding: 20px;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+.dark-light-toggle {
+  width: 25px;
+  height: 25px;
+  left: 0px;
+}
+.message {
+  padding: 15px;
+  background-color: var(--parts-bg-color);
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 6px;
+  text-align: center;
+  color: var(--main-text-color);
+}
+.message span {
+  font-weight: bold;
+  color: var(--msg-span-color);
+  text-transform: capitalize;
+}
+.message span::before {
+  content: "[ ";
+}
+.message span::after {
+  content: " ]";
+}
+
+.the-word {
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  color: var(--important-text-color);
+  user-select: none;
+}
+.input-word {
+  margin: 15px auto;
+  width: 100%;
+  display: none;
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 6px;
+  caret-color: var(--main-game-color);
+  border: 3px solid var(--main-game-color);
+}
+.input-word:focus {
+  outline: none;
+}
+.upcoming-words {
+  background-color: var(--parts-bg-color);
+  margin: 15px 0;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.upcoming-words div {
+  background-color: var(--main-game-color);
+  color: var(--main-text-color);
+  font-weight: bold;
+  margin: 4px;
+  padding: 10px;
+  border-radius: 6px;
+}
+.control .row {
+  display: flex;
+  justify-content: space-between;
+  color: var(--main-text-color);
+  background-color: var(--parts-bg-color);
+  padding: 15px;
+}
+
+.control span {
+  font-weight: bold;
+  color: var(--control-span-color);
+}
+
+.finish {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  padding: 15px;
+}
+.finish .good {
+  color: var(--good-finish-color);
+}
+.finish .bad {
+  color: var(--bad-finish-color);
+}
+.start-popup {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 300px;
+
+  z-index: 1000;
+  left: 50%;
+  top: 50%;
+  border: 2px var(--main-text-color) solid;
+  transform: translate(-50%, -50%);
+  background-color: var(--parts-bg-color);
+  padding: 20px;
+  border-radius: 8px;
+  color: var(--main-text-color);
+}
+.settings {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.settings .difficulty-select {
+  width: 50%;
+  height: 50px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+.word-count {
+  width: 50%;
+  height: 50px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+.settings label {
+  margin: 10px;
+  display: block;
+  font-size: 20px;
+  width: 100%;
+}
+.start-btn {
+  font-size: 25px;
+  width: 100%;
+  margin: 10px auto;
+  height: 50px;
+  border-radius: 8px;
+  background-color: var(--start-btn-color);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

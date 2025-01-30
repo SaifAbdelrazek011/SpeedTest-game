@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing SpeedTest Game</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="whole-game-container">
+      <div class="game-name">
+        Typing SpeedTest Game
+
+        <img
+          class="dark-light-toggle"
+          src="./Images/moon.png"
+          alt="dark and light modes toggle"
+        />
+      </div>
+      <div class="main-container">
+        <div class="message">
+          You Are Playing On <span class="lvl"></span> Level & You Have
+          <span class="seconds"></span> Seconds To Type The Word
+        </div>
+
+        <div class="the-word"></div>
+        <input type="text" class="input-word" />
+        <div class="upcoming-words"></div>
+        <div class="control">
+          <div class="row">
+            <div class="time">Time Left: <span>Seconds</span></div>
+            <div class="score-field">
+              Score: <span class="your-current-score">0</span> From
+              <span class="total-score"></span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="start-popup">
+        <div class="finish"></div>
+        <div class="settings">
+          <label for="difficulty-select">Difficulty:</label>
+          <select class="difficulty-select">
+            <option value="easy">Easy</option>
+            <option value="normal">Normal</option>
+            <option value="hard">Hard</option>
+            <option value="insane">insane</option>
+          </select>
+          <label for="word-count" class="word-count-txt"
+            >Words:</label
+          >
+          <input
+            type="number"
+            id="word-count"
+            class="word-count"
+            min="1"
+            max="30"
+            value="10"
+          />
+  </div>
+  <button class="start-btn">Start Playing</button>
+      </div>
+<audio src="./audio/success.mp3" class="success"></audio>
+<audio src="./audio/fail.mp3" class="fail"></audio>
+    </div>
+    <script src="./dist/Main.js"></script>
+  </body>
+</html>

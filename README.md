@@ -12,8 +12,6 @@ A responsive typing speed test game with adaptive difficulty levels and theme sw
 
 **Live Demo**: [Play Now](https://saifabdelrazek011.github.io/speed-typing-game)
 
-![Gameplay Demo]([./screenshots/gameplay.gif](https://cloud-81omewll7-hack-club-bot.vercel.app/0image.png)) <!-- Add actual screenshot -->
-
 ## Technical Architecture
 
 ### Core Components

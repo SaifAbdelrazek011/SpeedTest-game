@@ -10,7 +10,7 @@ I am very happy that I have finally finished this project because it took a lot 
 
 A responsive typing speed test game with adaptive difficulty levels and theme switching, implemented in TypeScript with strict type safety.
 
-**Live Demo**: [Play Now](https://saifabdelrazek011.github.io/speed-typing-game)
+**Live Demo**: [Play Now](https://saifabdelrazek011.github.io/SpeedTest-game/)
 
 ## Technical Architecture
 

@@ -50,7 +50,6 @@ SpeedTest-game/
 ├── index.html              # Main entry point
 ├── style.css               # Styles
 ├── words.json              # Word database
-├── ideas-for-improving.txt # Development notes
 ├── package.json
 ├── package-lock.json
 └── tsconfig.json

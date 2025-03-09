@@ -1,5 +1,7 @@
 # SpeedTest-game
 
+**By [Saif Abdelrazek](https://github.com/SaifAbdelrazek011)**  
+
 This is a speed test, but it operates on a different concept than the standard one. We don't depend on WPM (words per minute), but we are using a way that states either you are capable or not by setting words according to the difficulty specified and the number of words selected (max 30 per game and this is specified for written numbers more than 30).
 
 I am very happy that I have finally finished this project because it took a lot of time from me to solve a lot of logic and algorithmic mistakes to finish it. In addition, it was the first project I started to build using TypeScript. However, during the middle of the construction process, I have stopped because it took a lot of time and started on other projects. Until finally, I returned to complete it, and it is as you see now.
